@@ -124,6 +124,7 @@ SEED_BTN_COLORED_GLAZE_LOTUS = Button(area={'qq': (171, 606, 209, 629), 'wechat'
 SEED_BTN_HAHA_PUMPKIN = Button(area={'qq': (84, 674, 113, 693), 'wechat': (84, 674, 113, 693)}, color={'qq': (233, 180, 119), 'wechat': (233, 180, 119)}, button={'qq': (84, 674, 113, 693), 'wechat': (84, 674, 113, 693)}, file={'qq': 'templates/qq/seedbtn/seed_btn_haha_pumpkin.png', 'wechat': 'templates/qq/seedbtn/seed_btn_haha_pumpkin.png'}, name='seed_btn_haha_pumpkin')
 SEED_BTN_HEART_FRUIT = Button(area={'qq': (81, 613, 120, 637), 'wechat': (81, 613, 120, 637)}, color={'qq': (243, 176, 78), 'wechat': (243, 176, 78)}, button={'qq': (81, 613, 120, 637), 'wechat': (81, 613, 120, 637)}, file={'qq': 'templates/qq/seedbtn/seed_btn_heart_fruit.png', 'wechat': 'templates/qq/seedbtn/seed_btn_heart_fruit.png'}, name='seed_btn_heart_fruit')
 SEED_BTN_MUGWORT = Button(area={'qq': (193, 651, 219, 671), 'wechat': (193, 651, 219, 671)}, color={'qq': (111, 165, 77), 'wechat': (111, 165, 77)}, button={'qq': (193, 651, 219, 671), 'wechat': (193, 651, 219, 671)}, file={'qq': 'templates/qq/seedbtn/seed_btn_mugwort.png', 'wechat': 'templates/qq/seedbtn/seed_btn_mugwort.png'}, name='seed_btn_mugwort')
+SEED_BTN_STARWHISPER_FLOWER = Button(area={'qq': (164, 570, 207, 600), 'wechat': (164, 570, 207, 600)}, color={'qq': (236, 209, 138), 'wechat': (236, 209, 138)}, button={'qq': (164, 570, 207, 600), 'wechat': (164, 570, 207, 600)}, file={'qq': 'templates/qq/seedbtn/seed_btn_starwhisper_flower.png', 'wechat': 'templates/qq/seedbtn/seed_btn_starwhisper_flower.png'}, name='seed_btn_starwhisper_flower')
 SETTING_CHECK = Button(area={'qq': (31, 607, 53, 632), 'wechat': (31, 607, 53, 632)}, color={'qq': (227, 183, 122), 'wechat': (227, 183, 122)}, button={'qq': (31, 607, 53, 632), 'wechat': (31, 607, 53, 632)}, file={'qq': 'templates/qq/ui/setting_check.png', 'wechat': 'templates/qq/ui/setting_check.png'}, name='setting_check')
 SHARE_CHECK = Button(area={'qq': (64, 142, 130, 175), 'wechat': (64, 142, 130, 175)}, color={'qq': (194, 160, 136), 'wechat': (194, 160, 136)}, button={'qq': (64, 142, 130, 175), 'wechat': (64, 142, 130, 175)}, file={'qq': 'templates/qq/ui/share_check.png', 'wechat': 'templates/qq/ui/share_check.png'}, name='share_check')
 SHOP_CHECK = Button(area={'qq': (241, 85, 298, 113), 'wechat': (241, 85, 298, 113)}, color={'qq': (225, 191, 168), 'wechat': (225, 191, 168)}, button={'qq': (241, 85, 298, 113), 'wechat': (241, 85, 298, 113)}, file={'qq': 'templates/qq/ui/shop_check.png', 'wechat': 'templates/qq/ui/shop_check.png'}, name='shop_check')
@@ -256,6 +257,7 @@ ASSET_NAME_TO_CONST = {
     'seed_btn_haha_pumpkin': SEED_BTN_HAHA_PUMPKIN,
     'seed_btn_heart_fruit': SEED_BTN_HEART_FRUIT,
     'seed_btn_mugwort': SEED_BTN_MUGWORT,
+    'seed_btn_starwhisper_flower': SEED_BTN_STARWHISPER_FLOWER,
     'setting_check': SETTING_CHECK,
     'share_check': SHARE_CHECK,
     'shop_check': SHOP_CHECK,

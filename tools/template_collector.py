@@ -56,7 +56,7 @@ class TemplateCollector:
 
     def _prepare_window(self, keyword: str, platform: str = 'qq', position: str = 'left_center') -> bool:
         """查找并激活窗口，然后按项目逻辑调整分辨率。"""
-        window = self.wm.find_window(keyword)
+        window = self.wm.find_window(keyword, platform=platform)
         if not window:
             print(f"未找到包含 '{keyword}' 的窗口")
             print('请先打开QQ农场小程序')
