@@ -1,0 +1,20 @@
+{
+  "_comment": "上期活动默认配置备份（tasks/event.py 中的 DEFAULT_*）。复用时：1) 将 templates/qq/event/ 下的 png 拷回项目 templates/qq/event/；2) 运行 python tools/button_extract.py 重新生成 core/ui/assets.py；3) 将以下值写回 tasks/event.py 的 DEFAULT_ACTIVITY_NAME / DEFAULT_DAILY_TIMES / DEFAULT_RESOURCES / DEFAULT_END_TIME。",
+  "activity_name": "荷风十里蝉初鸣",
+  "daily_times": ["00:01"],
+  "resources": [
+    "btn_hefeng_100:threshold=0.74",
+    "btn_hefeng_101",
+    "btn_hefeng_103:4.0",
+    "EVENT_TOP_TAP_1",
+    "btn_hefeng_104_s:1.2",
+    "btn_hefeng_105_s:4.0",
+    "EVENT_TOP_TAP_2",
+    "btn_hefeng_106",
+    "btn_hefeng_107:2",
+    "btn_hefeng_108"
+  ],
+  "resources_commented_out": ["btn_hefeng_102:threshold=0.95"],
+  "end_time": "2026-07-21 00:00:00",
+  "notes": "104_s/105_s 为点券资源（受 features.use_coupon 开关控制）；btn_hefeng_100 使用 threshold=0.74 兼容微信字体；102 当时注释停用。"
+}
