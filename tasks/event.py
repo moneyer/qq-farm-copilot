@@ -17,23 +17,27 @@ if TYPE_CHECKING:
 
 
 # 当期活动默认配置
-DEFAULT_ACTIVITY_NAME = '荷风十里蝉初鸣'
+DEFAULT_ACTIVITY_NAME = '心许千灯星垂野'
 DEFAULT_DAILY_TIMES = ['00:01']
 DEFAULT_RESOURCES = [
-    'btn_hefeng_100:threshold=0.74',  # 兼容微信的字体
-    'btn_hefeng_101',
-    #'btn_hefeng_102:threshold=0.95',
-    'btn_hefeng_103:4.0',
+    'btn_qianxing_100:threshold=0.74',  # 兼容微信的字体
+    'btn_qianxing_101',
+    'btn_qianxing_102',
     'EVENT_TOP_TAP_1',
-    'btn_hefeng_104_s:1.2',
-    'btn_hefeng_105_s:4.0',
+    'btn_qianxing_103',
+    'btn_qianxing_104',
     'EVENT_TOP_TAP_2',
-    'btn_hefeng_106',
-    'btn_hefeng_107:2',
-    'btn_hefeng_108',
+    'btn_qianxing_105',
+    'btn_qianxing_106',
+    'EVENT_TOP_TAP_3',
+    'btn_qianxing_107',
+    'btn_qianxing_108',
+    'EVENT_TOP_TAP_2',
+    'EVENT_POINT_TAP_30_87',  # 左上角返回主页面
 ]
-DEFAULT_END_TIME = '2026-07-21 00:00:00'
-CLICK_ANIMATION_DELAY = 0.8
+
+DEFAULT_END_TIME = '2026-08-28 00:00:00'
+CLICK_ANIMATION_DELAY = 1.0
 # 顶部偏上位置的点击坐标，用于关闭某些活动弹窗。
 TOP_TAP_POINT = (270, 80)
 _END_TIME_FORMATS = ('%Y-%m-%d %H:%M:%S', '%Y-%m-%d %H:%M', '%Y-%m-%d')
@@ -72,6 +76,18 @@ class TaskEvent(TaskBase):
             if name.startswith('EVENT_TOP_TAP'):
                 logger.info('活动: 点击顶部区域 | name={} delay={}s', name, delay)
                 self._click_top_area()
+                self.ui.device.sleep(delay)
+                last_successful_index = i
+                i += 1
+                continue
+            if name.startswith('EVENT_POINT_TAP'):
+                point = self._parse_point_tap(name)
+                if point is None:
+                    logger.warning('活动: 坐标点解析失败，跳过 | name={}', name)
+                    i += 1
+                    continue
+                logger.info('活动: 点击指定坐标 | name={} point={} delay={}s', name, point, delay)
+                self._click_point(int(point[0]), int(point[1]), desc=name.lower())
                 self.ui.device.sleep(delay)
                 last_successful_index = i
                 i += 1
@@ -201,7 +217,7 @@ class TaskEvent(TaskBase):
             name, delay, top_click, threshold = self._parse_resource_entry(str(entry or '').strip())
             if not name:
                 continue
-            if name.startswith('EVENT_TOP_TAP'):
+            if name.startswith('EVENT_TOP_TAP') or name.startswith('EVENT_POINT_TAP'):
                 out.append((name, None, delay, False, threshold))
                 continue
             if name.endswith('_s') and not use_coupon:
@@ -248,11 +264,26 @@ class TaskEvent(TaskBase):
     def _click_top_area(self) -> None:
         """点击设备顶部偏上位置，用于关闭活动后的特定弹窗。"""
         x, y = TOP_TAP_POINT
+        self._click_point(int(x), int(y), desc='event_top_tap')
+
+    def _click_point(self, x: int, y: int, desc: str) -> None:
+        """点击指定逻辑坐标。"""
         try:
-            self.ui.device.click_point(int(x), int(y), desc='event_top_tap')
-            logger.debug('活动: 点击顶部区域 | point=({}, {})', x, y)
+            self.ui.device.click_point(int(x), int(y), desc=desc)
+            logger.debug('活动: 点击坐标 | point=({}, {}) desc={}', x, y, desc)
         except Exception as exc:
-            logger.warning('活动: 点击顶部区域失败 | error={}', exc)
+            logger.warning('活动: 点击坐标失败 | desc={} error={}', desc, exc)
+
+    @staticmethod
+    def _parse_point_tap(name: str) -> tuple[int, int] | None:
+        """解析 `EVENT_POINT_TAP_<x>_<y>` 形式的坐标点。"""
+        parts = str(name or '').split('_')
+        if len(parts) < 5:
+            return None
+        try:
+            return int(parts[-2]), int(parts[-1])
+        except ValueError:
+            return None
 
     def _emit_config_if_available(self) -> None:
         """如果引擎支持，立即推送一次配置变更事件。"""

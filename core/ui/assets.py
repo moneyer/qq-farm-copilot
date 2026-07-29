@@ -31,15 +31,6 @@ BTN_GRASS = Button(area={'qq': (247, 578, 282, 601), 'wechat': (247, 578, 282, 6
 BTN_GRASS_END = Button(area={'qq': (232, 545, 270, 571), 'wechat': (232, 545, 270, 571)}, color={'qq': (147, 145, 136), 'wechat': (147, 145, 136)}, button={'qq': (232, 545, 270, 571), 'wechat': (232, 545, 270, 571)}, file={'qq': 'templates/qq/btn/btn_grass_end.png', 'wechat': 'templates/qq/btn/btn_grass_end.png'}, name='btn_grass_end')
 BTN_HARVEST = Button(area={'qq': (246, 688, 287, 720), 'wechat': (246, 688, 287, 720)}, color={'qq': (221, 169, 139), 'wechat': (221, 169, 139)}, button={'qq': (246, 688, 287, 720), 'wechat': (246, 688, 287, 720)}, file={'qq': 'templates/qq/btn/btn_harvest.png', 'wechat': 'templates/qq/btn/btn_harvest.png'}, name='btn_harvest')  # 一键收获
 BTN_HARVEST_POP = Button(area={'qq': (431, 462, 483, 479), 'wechat': (431, 462, 483, 479)}, color={'qq': (141, 162, 164), 'wechat': (141, 162, 164)}, button={'qq': (431, 462, 483, 479), 'wechat': (431, 462, 483, 479)}, file={'qq': 'templates/qq/btn/btn_harvest_pop.png', 'wechat': 'templates/qq/btn/btn_harvest_pop.png'}, name='btn_harvest_pop')
-BTN_HEFENG_100 = Button(area={'qq': (462, 270, 528, 286), 'wechat': (462, 270, 528, 286)}, color={'qq': (187, 159, 135), 'wechat': (187, 159, 135)}, button={'qq': (462, 270, 528, 286), 'wechat': (462, 270, 528, 286)}, file={'qq': 'templates/qq/event/btn_hefeng_100.png', 'wechat': 'templates/qq/event/btn_hefeng_100.png'}, name='btn_hefeng_100')
-BTN_HEFENG_101 = Button(area={'qq': (221, 850, 322, 878), 'wechat': (221, 850, 322, 878)}, color={'qq': (183, 202, 170), 'wechat': (183, 202, 170)}, button={'qq': (221, 850, 322, 878), 'wechat': (221, 850, 322, 878)}, file={'qq': 'templates/qq/event/btn_hefeng_101.png', 'wechat': 'templates/qq/event/btn_hefeng_101.png'}, name='btn_hefeng_101')
-BTN_HEFENG_102 = Button(area={'qq': (27, 701, 68, 726), 'wechat': (27, 701, 68, 726)}, color={'qq': (157, 131, 94), 'wechat': (157, 131, 94)}, button={'qq': (27, 701, 68, 726), 'wechat': (27, 701, 68, 726)}, file={'qq': 'templates/qq/event/btn_hefeng_102.png', 'wechat': 'templates/qq/event/btn_hefeng_102.png'}, name='btn_hefeng_102')
-BTN_HEFENG_103 = Button(area={'qq': (355, 761, 445, 814), 'wechat': (355, 761, 445, 814)}, color={'qq': (238, 199, 143), 'wechat': (238, 199, 143)}, button={'qq': (355, 761, 445, 814), 'wechat': (355, 761, 445, 814)}, file={'qq': 'templates/qq/event/btn_hefeng_103.png', 'wechat': 'templates/qq/event/btn_hefeng_103.png'}, name='btn_hefeng_103')
-BTN_HEFENG_104_S = Button(area={'qq': (349, 763, 445, 815), 'wechat': (349, 763, 445, 815)}, color={'qq': (212, 184, 125), 'wechat': (212, 184, 125)}, button={'qq': (349, 763, 445, 815), 'wechat': (349, 763, 445, 815)}, file={'qq': 'templates/qq/event/btn_hefeng_104_s.png', 'wechat': 'templates/qq/event/btn_hefeng_104_s.png'}, name='btn_hefeng_104_s')
-BTN_HEFENG_105_S = Button(area={'qq': (359, 534, 407, 558), 'wechat': (359, 534, 407, 558)}, color={'qq': (191, 200, 113), 'wechat': (191, 200, 113)}, button={'qq': (359, 534, 407, 558), 'wechat': (359, 534, 407, 558)}, file={'qq': 'templates/qq/event/btn_hefeng_105_s.png', 'wechat': 'templates/qq/event/btn_hefeng_105_s.png'}, name='btn_hefeng_105_s')
-BTN_HEFENG_106 = Button(area={'qq': (199, 890, 226, 923), 'wechat': (199, 890, 226, 923)}, color={'qq': (233, 161, 144), 'wechat': (233, 161, 144)}, button={'qq': (199, 890, 226, 923), 'wechat': (199, 890, 226, 923)}, file={'qq': 'templates/qq/event/btn_hefeng_106.png', 'wechat': 'templates/qq/event/btn_hefeng_106.png'}, name='btn_hefeng_106')
-BTN_HEFENG_107 = Button(area={'qq': (224, 810, 319, 835), 'wechat': (224, 810, 319, 835)}, color={'qq': (150, 167, 133), 'wechat': (150, 167, 133)}, button={'qq': (224, 810, 319, 835), 'wechat': (224, 810, 319, 835)}, file={'qq': 'templates/qq/event/btn_hefeng_107.png', 'wechat': 'templates/qq/event/btn_hefeng_107.png'}, name='btn_hefeng_107')
-BTN_HEFENG_108 = Button(area={'qq': (17, 62, 56, 95), 'wechat': (17, 62, 56, 95)}, color={'qq': (179, 197, 166), 'wechat': (179, 197, 166)}, button={'qq': (17, 62, 56, 95), 'wechat': (17, 62, 56, 95)}, file={'qq': 'templates/qq/event/btn_hefeng_108.png', 'wechat': 'templates/qq/event/btn_hefeng_108.png'}, name='btn_hefeng_108')
 BTN_HOME = Button(area={'qq': (465, 697, 510, 729), 'wechat': (465, 697, 510, 729)}, color={'qq': (181, 126, 76), 'wechat': (181, 126, 76)}, button={'qq': (465, 697, 510, 729), 'wechat': (465, 697, 510, 729)}, file={'qq': 'templates/qq/btn/btn_home.png', 'wechat': 'templates/qq/btn/btn_home.png'}, name='btn_home')  # 回家
 BTN_LAND_LEFT = Button(area={'qq': (64, 591, 79, 612), 'wechat': (64, 591, 79, 612)}, color={'qq': (194, 200, 89), 'wechat': (194, 200, 89)}, button={'qq': (64, 591, 79, 612), 'wechat': (64, 591, 79, 612)}, file={'qq': 'templates/qq/btn/btn_land_left.png', 'wechat': 'templates/qq/btn/btn_land_left.png'}, name='btn_land_left')
 BTN_LAND_POP_EMPTY = Button(area={'qq': (194, 507, 222, 521), 'wechat': (194, 507, 222, 521)}, color={'qq': (208, 173, 147), 'wechat': (208, 173, 147)}, button={'qq': (194, 507, 222, 521), 'wechat': (194, 507, 222, 521)}, file={'qq': 'templates/qq/btn/btn_land_pop_empty.png', 'wechat': 'templates/qq/btn/btn_land_pop_empty.png'}, name='btn_land_pop_empty')
@@ -62,6 +53,16 @@ BTN_ONECLICK_OPEN = Button(area={'qq': (326, 805, 419, 829), 'wechat': (326, 805
 BTN_ORDINARY_FERTILIZER = Button(area={'qq': (115, 610, 159, 642), 'wechat': (115, 610, 159, 642)}, color={'qq': (200, 134, 76), 'wechat': (200, 134, 76)}, button={'qq': (115, 610, 159, 642), 'wechat': (115, 610, 159, 642)}, file={'qq': 'templates/qq/btn/btn_ordinary_fertilizer.png', 'wechat': 'templates/qq/btn/btn_ordinary_fertilizer.png'}, name='btn_ordinary_fertilizer')
 BTN_ORGANIC_FERTILIZER = Button(area={'qq': (202, 613, 248, 640), 'wechat': (202, 613, 248, 640)}, color={'qq': (175, 139, 35), 'wechat': (175, 139, 35)}, button={'qq': (202, 613, 248, 640), 'wechat': (202, 613, 248, 640)}, file={'qq': 'templates/qq/btn/btn_organic_fertilizer.png', 'wechat': 'templates/qq/btn/btn_organic_fertilizer.png'}, name='btn_organic_fertilizer')
 BTN_PLANTING = Button(area={'qq': (233, 866, 307, 893), 'wechat': (233, 866, 307, 893)}, color={'qq': (190, 201, 107), 'wechat': (190, 201, 107)}, button={'qq': (233, 866, 307, 893), 'wechat': (233, 866, 307, 893)}, file={'qq': 'templates/qq/btn/btn_planting.png', 'wechat': 'templates/qq/btn/btn_planting.png'}, name='btn_planting')
+BTN_QIANXING_100 = Button(area={'qq': (459, 277, 523, 296), 'wechat': (459, 277, 523, 296)}, color={'qq': (180, 161, 134), 'wechat': (180, 161, 134)}, button={'qq': (459, 277, 523, 296), 'wechat': (459, 277, 523, 296)}, file={'qq': 'templates/qq/event/btn_qianxing_100.png', 'wechat': 'templates/qq/event/btn_qianxing_100.png'}, name='btn_qianxing_100')
+BTN_QIANXING_101 = Button(area={'qq': (216, 849, 324, 879), 'wechat': (216, 849, 324, 879)}, color={'qq': (161, 205, 253), 'wechat': (161, 205, 253)}, button={'qq': (216, 849, 324, 879), 'wechat': (216, 849, 324, 879)}, file={'qq': 'templates/qq/event/btn_qianxing_101.png', 'wechat': 'templates/qq/event/btn_qianxing_101.png'}, name='btn_qianxing_101')
+BTN_QIANXING_102 = Button(area={'qq': (224, 814, 315, 840), 'wechat': (224, 814, 315, 840)}, color={'qq': (226, 184, 124), 'wechat': (226, 184, 124)}, button={'qq': (224, 814, 315, 840), 'wechat': (224, 814, 315, 840)}, file={'qq': 'templates/qq/event/btn_qianxing_102.png', 'wechat': 'templates/qq/event/btn_qianxing_102.png'}, name='btn_qianxing_102')
+BTN_QIANXING_103 = Button(area={'qq': (176, 898, 237, 945), 'wechat': (176, 898, 237, 945)}, color={'qq': (72, 123, 173), 'wechat': (72, 123, 173)}, button={'qq': (176, 898, 237, 945), 'wechat': (176, 898, 237, 945)}, file={'qq': 'templates/qq/event/btn_qianxing_103.png', 'wechat': 'templates/qq/event/btn_qianxing_103.png'}, name='btn_qianxing_103')
+BTN_QIANXING_104 = Button(area={'qq': (284, 775, 314, 807), 'wechat': (284, 775, 314, 807)}, color={'qq': (207, 169, 114), 'wechat': (207, 169, 114)}, button={'qq': (284, 775, 314, 807), 'wechat': (284, 775, 314, 807)}, file={'qq': 'templates/qq/event/btn_qianxing_104.png', 'wechat': 'templates/qq/event/btn_qianxing_104.png'}, name='btn_qianxing_104')
+BTN_QIANXING_105 = Button(area={'qq': (423, 901, 484, 944), 'wechat': (423, 901, 484, 944)}, color={'qq': (68, 118, 168), 'wechat': (68, 118, 168)}, button={'qq': (423, 901, 484, 944), 'wechat': (423, 901, 484, 944)}, file={'qq': 'templates/qq/event/btn_qianxing_105.png', 'wechat': 'templates/qq/event/btn_qianxing_105.png'}, name='btn_qianxing_105')
+BTN_QIANXING_106 = Button(area={'qq': (375, 787, 429, 817), 'wechat': (375, 787, 429, 817)}, color={'qq': (138, 207, 237), 'wechat': (138, 207, 237)}, button={'qq': (375, 787, 429, 817), 'wechat': (375, 787, 429, 817)}, file={'qq': 'templates/qq/event/btn_qianxing_106.png', 'wechat': 'templates/qq/event/btn_qianxing_106.png'}, name='btn_qianxing_106')
+BTN_QIANXING_107 = Button(area={'qq': (69, 355, 110, 391), 'wechat': (69, 355, 110, 391)}, color={'qq': (99, 146, 193), 'wechat': (99, 146, 193)}, button={'qq': (69, 355, 110, 391), 'wechat': (69, 355, 110, 391)}, file={'qq': 'templates/qq/event/btn_qianxing_107.png', 'wechat': 'templates/qq/event/btn_qianxing_107.png'}, name='btn_qianxing_107')
+BTN_QIANXING_108 = Button(area={'qq': (375, 787, 429, 817), 'wechat': (375, 787, 429, 817)}, color={'qq': (138, 207, 237), 'wechat': (138, 207, 237)}, button={'qq': (375, 787, 429, 817), 'wechat': (375, 787, 429, 817)}, file={'qq': 'templates/qq/event/btn_qianxing_108.png', 'wechat': 'templates/qq/event/btn_qianxing_108.png'}, name='btn_qianxing_108')
+BTN_QIANXING_109 = Button(area={'qq': (12, 61, 44, 112), 'wechat': (12, 61, 44, 112)}, color={'qq': (124, 195, 236), 'wechat': (124, 195, 236)}, button={'qq': (12, 61, 44, 112), 'wechat': (12, 61, 44, 112)}, file={'qq': 'templates/qq/event/btn_qianxing_109.png', 'wechat': 'templates/qq/event/btn_qianxing_109.png'}, name='btn_qianxing_109')
 BTN_QQSVIP = Button(area={'qq': (112, 148, 133, 179), 'wechat': (112, 148, 133, 179)}, color={'qq': (133, 103, 69), 'wechat': (133, 103, 69)}, button={'qq': (112, 148, 133, 179), 'wechat': (112, 148, 133, 179)}, file={'qq': 'templates/qq/btn/btn_qqsvip.png', 'wechat': 'templates/qq/btn/btn_qqsvip.png'}, name='btn_qqsvip')
 BTN_QQSVIP_CHECK = Button(area={'qq': (194, 265, 289, 283), 'wechat': (194, 265, 289, 283)}, color={'qq': (225, 188, 165), 'wechat': (225, 188, 165)}, button={'qq': (194, 265, 289, 283), 'wechat': (194, 265, 289, 283)}, file={'qq': 'templates/qq/btn/btn_qqsvip_check.png', 'wechat': 'templates/qq/btn/btn_qqsvip_check.png'}, name='btn_qqsvip_check')
 BTN_SHARE_GREEN = Button(area={'qq': (356, 753, 406, 778), 'wechat': (356, 753, 406, 778)}, color={'qq': (178, 195, 76), 'wechat': (178, 195, 76)}, button={'qq': (356, 753, 406, 778), 'wechat': (356, 753, 406, 778)}, file={'qq': 'templates/qq/btn/btn_share_green.png', 'wechat': 'templates/qq/btn/btn_share_green.png'}, name='btn_share_green')
@@ -162,15 +163,6 @@ ASSET_NAME_TO_CONST = {
     'btn_grass_end': BTN_GRASS_END,
     'btn_harvest': BTN_HARVEST,
     'btn_harvest_pop': BTN_HARVEST_POP,
-    'btn_hefeng_100': BTN_HEFENG_100,
-    'btn_hefeng_101': BTN_HEFENG_101,
-    'btn_hefeng_102': BTN_HEFENG_102,
-    'btn_hefeng_103': BTN_HEFENG_103,
-    'btn_hefeng_104_s': BTN_HEFENG_104_S,
-    'btn_hefeng_105_s': BTN_HEFENG_105_S,
-    'btn_hefeng_106': BTN_HEFENG_106,
-    'btn_hefeng_107': BTN_HEFENG_107,
-    'btn_hefeng_108': BTN_HEFENG_108,
     'btn_home': BTN_HOME,
     'btn_land_left': BTN_LAND_LEFT,
     'btn_land_pop_empty': BTN_LAND_POP_EMPTY,
@@ -193,6 +185,16 @@ ASSET_NAME_TO_CONST = {
     'btn_ordinary_fertilizer': BTN_ORDINARY_FERTILIZER,
     'btn_organic_fertilizer': BTN_ORGANIC_FERTILIZER,
     'btn_planting': BTN_PLANTING,
+    'btn_qianxing_100': BTN_QIANXING_100,
+    'btn_qianxing_101': BTN_QIANXING_101,
+    'btn_qianxing_102': BTN_QIANXING_102,
+    'btn_qianxing_103': BTN_QIANXING_103,
+    'btn_qianxing_104': BTN_QIANXING_104,
+    'btn_qianxing_105': BTN_QIANXING_105,
+    'btn_qianxing_106': BTN_QIANXING_106,
+    'btn_qianxing_107': BTN_QIANXING_107,
+    'btn_qianxing_108': BTN_QIANXING_108,
+    'btn_qianxing_109': BTN_QIANXING_109,
     'btn_qqsvip': BTN_QQSVIP,
     'btn_qqsvip_check': BTN_QQSVIP_CHECK,
     'BTN_SEED_SELECT_POPUP_RIGHT': BTN_SEED_SELECT_POPUP_RIGHT,
