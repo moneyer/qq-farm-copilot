@@ -32,7 +32,7 @@ DEFAULT_RESOURCES = [
     'EVENT_TOP_TAP_3',
     'btn_qianxing_107',
     'btn_qianxing_108',
-    'EVENT_TOP_TAP_2',
+    'EVENT_TOP_TAP_4',
     'EVENT_POINT_TAP_30_87',  # 左上角返回主页面
 ]
 
